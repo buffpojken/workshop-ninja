@@ -39,3 +39,5 @@ set :linked_dirs, %w{log tmp/pids public/system}
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+after "deploy:started", "deploy:stop"
+after "deploy:published", "deploy:start"

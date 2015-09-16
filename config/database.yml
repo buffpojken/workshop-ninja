@@ -27,4 +27,5 @@ production:
   adapter: postgresql
   database: insights_db
   username: rails_user
+  host: localhost
   password: monkeymonkey
